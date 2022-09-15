@@ -21,7 +21,7 @@ export default function Home({ stores,banners,uwtexts }) {
   <div key={uwtext.uwtitle} className='flex flex-col md:flex-row md:justify-start justify-center items-center lg:py-2 shadow-xl sticky top-0 bg-blue-200 z-10'>
       <div className="cursor-pointer logo mr-auto md:mx-5 flex ">
       <Image className='rounded-full bg-indigo-500'height={50} width={50} src="/logobag.png" alt='navlogo' />
-       <img src={uwtext.uwtitle} className="md:h-[3vh] h-[5vh] w-[25vh] ml-4 mt-2" alt="title" />
+       <img src={uwtext.uwtitle} className="md:h-[3vh] lg:h[5vh] h-[5vh] w-[25vh] ml-4 mt-2" alt="title" />
       </div>
     </div>
   ))}
