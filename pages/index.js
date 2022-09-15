@@ -67,7 +67,7 @@ export default function Home({ stores,banners,uwtexts }) {
 
   )
 }
-export async function getServerSideProps(context) {
+export async function getStaticSideProps(context) {
   if (!mongoose.connections[0].readyState) {
     await mongoose.connect(process.env.MONGO_URI)
   }
